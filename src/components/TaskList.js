@@ -3,14 +3,18 @@ import Task from "./Task"
 
 function TaskList({ tasks }) {
 
-const [newTasks, changeNewTasks] = useState(tasks)
+const [newTasksArray, setNewTasksArray] = useState(tasks)
+
+function handleDeleteButton(task) {
+  setNewTasksArray(newTasksArray => newTasksArray.filter(tak => tak !== task))
+}
 
   return (
     <div className="tasks">
       {/* display a list of tasks using Task component */}
       <ul className="Items">
-        {newTasks.map((items) => (
-         <Task category={items.category} text={items.text} key={items.text} newTasks={newTasks}/>
+        {newTasksArray.map((task) => (
+         <Task category={task.category} text={task.text} key={task.text} handleDeleteButton={handleDeleteButton} task={task}/>
         ))}
       </ul>
     </div>

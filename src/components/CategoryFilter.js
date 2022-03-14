@@ -7,7 +7,7 @@ function CategoryFilter({categories}) {
   
 
 function handleButtonClassName() {
- setButtonClassName((buttonClassName) => buttonClassName = "selected" )
+ setButtonClassName("selected")
 }
 
   return (

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Task from "./Task"
 
-function TaskList({ tasks }) {
+function TaskList({ tasks,  }) {
 
 const [newTasksArray, setNewTasksArray] = useState(tasks)
 

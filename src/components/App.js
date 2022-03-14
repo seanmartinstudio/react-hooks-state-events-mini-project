@@ -10,18 +10,17 @@ function App() {
 
 const [tasks, setTasks] = useState(TASKS)
 const [category, setCategory] = useState("All")
+console.log(category)
 
+const filteredItems = tasks.filter(task => category === "All" || task.category === category)
 
-function changeSelectedCategory(newCategory) {
-setTasks(tasks => tasks.filter(item => item.category === newCategory))
-}
 
   return (
     <div className="App">
       <h2>My tasks</h2>
-      <CategoryFilter categories={CATEGORIES} selectedCategory={category} changeSelectedCategory={changeSelectedCategory} />
+      <CategoryFilter categories={CATEGORIES} selectedCategory={category} changeSelectedCategory={setCategory} />
       <NewTaskForm />
-      <TaskList tasks={tasks} setTasks={setTasks}/>
+      <TaskList setTasks={setTasks} tasks={filteredItems}/>
     </div>
   );
 }

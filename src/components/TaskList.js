@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Task from "./Task"
 
 function TaskList({ tasks, setTasks}) {
-
+console.log(tasks)
 
 function handleDeleteButton(task) {
   setTasks(tasks => tasks.filter(item => item !== task))

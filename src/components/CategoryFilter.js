@@ -8,9 +8,7 @@ function CategoryFilter({categories}) {
 
 function handleButtonClassName() {
  setButtonClassName((buttonClassName) => buttonClassName = "selected" )
-
 }
-
 
   return (
     <div className="categories">

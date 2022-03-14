@@ -3,8 +3,8 @@ import React, {useState} from "react";
 function CategoryFilter({categories, selectedCategory, changeSelectedCategory}) {
 
 const categoryButtons = categories.map((category) => {
-const className = category === selectedCategory ? "selecte" : ""
-return (<button className={className} key={category} onClick={() => changeSelectedCategory(category)}>{category}</button>)
+const classN = category === selectedCategory ? "selected" : ""
+return (<button className={classN} key={category} onClick={() => changeSelectedCategory(category)}>{category}</button>)
 })
 
 

@@ -7,7 +7,6 @@ import { CATEGORIES, TASKS } from "../data";
 // import { useState } from "react/cjs/react.production.min";
 
 function App() {
-
 const [tasks, setTasks] = useState(TASKS)
 const [category, setCategory] = useState("All")
 const [taskFormInput, setTaskFormInput] = useState("")

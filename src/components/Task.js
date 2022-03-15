@@ -1,5 +1,4 @@
 import React from "react";
-import TaskList from "./TaskList";
 
 function Task({ category, text, handleDeleteButton, task}) {
 

@@ -19,7 +19,7 @@ const filteredItems = tasks.filter(task => category === "All" || task.category =
     <div className="App">
       <h2>My tasks</h2>
       <CategoryFilter categories={CATEGORIES} selectedCategory={category} changeSelectedCategory={setCategory} />
-      <NewTaskForm />
+      <NewTaskForm taskCategories={CATEGORIES}/>
       <TaskList setTasks={setTasks} tasks={filteredItems}/>
     </div>
   );

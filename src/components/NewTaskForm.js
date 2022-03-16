@@ -15,7 +15,6 @@ const newArr = [...tasks, {"text": taskFormInput, "category": formCategory}]
 setTasks(newArr)
 }
 
-
   return (
     <form className="new-task-form" onSubmit={onTaskFormSubmit}>
       <label>
@@ -36,5 +35,4 @@ setTasks(newArr)
 export default NewTaskForm;
 
 
-// onSumbit event, needs to call back onTaskFormSubmit
-// onTaskFormSubmit -- update setTasks state -- create new array and spread the current state of tasks and add the objects from the two inputs
+

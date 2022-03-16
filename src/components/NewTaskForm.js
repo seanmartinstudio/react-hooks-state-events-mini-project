@@ -16,10 +16,9 @@ const optionElement = taskCategories.map((category) => {
 
 function onTaskFormSubmit(event) {
 event.preventDefault()
-const newArr = [...tasks, {"text": taskFormInput, "category": formCategory}]
+const newArr = [...tasks, {"text": taskFormInput, "category": formCategory}] 
 setTasks(newArr)
 }
-
 
 
   return (

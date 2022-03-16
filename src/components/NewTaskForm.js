@@ -3,11 +3,6 @@ import React from "react";
 function NewTaskForm({taskCategories, taskFormInput, setTaskFormInput, tasks, setTasks, formCategory, setFormCategory}) {
 
 
-// const optionElement = taskCategories.map((category) => {
-// if(category !== "All") {
-// return (<option key={category} value={category}>{category}</option>)
-// }})
-
 const optionElement = taskCategories.map((category) => {
   if(category !== "All") 
   return (<option key={category} value={category}>{category}</option>)
